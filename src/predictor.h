@@ -28,8 +28,9 @@ extern const char *email;
 // The Different Predictor Types
 #define STATIC      0
 #define GSHARE      1
-#define TOURNAMENT  2
-#define CUSTOM      3
+#define LOCAL       2
+#define TOURNAMENT  3
+#define CUSTOM      4
 extern const char *bpName[];
 
 // Definitions for 2-bit counters
@@ -45,7 +46,7 @@ extern int ghistoryBits; // Number of bits used for Global History
 extern int lhistoryBits; // Number of bits used for Local History
 extern int pcIndexBits;  // Number of bits used for PC index
 extern int bpType;       // Branch Prediction Type
-extern int verbose;
+//extern int verbose;
 
 //------------------------------------//
 //    Predictor Function Prototypes   //
